@@ -1,24 +1,6 @@
 import java.util.Scanner;
 
 public class mortgage {
-    /**
-     * example usage:
-     * Monthly loan:
-     * 261750
-     * Monthly interest:
-     * 0.000139583333333
-     * Number of months:
-     * 240
-     * Down payment:
-     * 87250
-     * Original mortgage:
-     * 349000
-     * Monthly payment: 1109.0710706488642
-     * Monthly mortgage/total cost: 266177.0569557274
-     * Total cost: 353427.0569557274 - 351216.5431074896
-     * Total paid in interest: 4427.056955727399
-     */
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
