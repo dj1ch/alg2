@@ -1,6 +1,20 @@
+import java.util.Scanner;
+
 public class sum {
     public static void main(String[] args) {
-        double answer = sum(7, 5, 5);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("First term(a_1)(no fractions!): ");
+        double a = scanner.nextDouble();
+
+        System.out.println("Ratio of series(no fractions!): ");
+        double r = scanner.nextDouble();
+
+        System.out.println("Number of terms(n): ");
+        int n = scanner.nextInt();
+        scanner.close();
+
+        double answer = sum(a, r, n);
         System.out.println(answer);
     }
 

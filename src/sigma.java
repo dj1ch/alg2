@@ -1,8 +1,26 @@
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class sigma {
     public static void main(String[] args) {
-        double[] answer = sigma(3, 8, 7, 5, 3);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Starting index(k): ");
+        double k = scanner.nextDouble();
+
+        System.out.println("Number of terms(n): ");
+        int n = scanner.nextInt();
+
+        System.out.println("First term(a_1)(no fractions!): ");
+        double a = scanner.nextDouble();
+
+        System.out.println("Ratio of series(no fractions!): ");
+        double r = scanner.nextDouble();
+
+        System.out.println("What is the index(k) being subtracted by?: ");
+        int x = scanner.nextInt();
+        scanner.close();
+
+        double[] answer = sigma(k, n, a, r, x);
         for (int i = 0; i < answer.length; i++) {
             System.out.println(answer[i]);
         }
