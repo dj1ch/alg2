@@ -7,22 +7,16 @@ public class interest {
         System.out.println("Original interest rate: ");
         double r = scanner.nextDouble();
 
-        System.out.println("Number of months: ");
-        double n = scanner.nextDouble();
-        scanner.close();
-
-        double interest = interest(r, n);
+        double interest = interest(r);
         System.out.println("Monthly interest rate: " + interest);
     }
 
     /**
      * Calculates monthly interest rate
      * @param r Original interest rate
-     * @param n Number of months
      * @return Monthly interest rate
      */
-    public static double interest(double r, double n) {
-       return r / n;
+    public static double interest(double r) {
+       return r / 12;
     }
-
 }
